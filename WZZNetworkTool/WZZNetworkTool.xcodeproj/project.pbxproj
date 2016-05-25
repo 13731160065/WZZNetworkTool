@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71B1EBE91CF54151001AE4AF /* WZZPropertyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1EBE71CF54151001AE4AF /* WZZPropertyVC.m */; };
+		71B1EBEF1CF573E5001AE4AF /* WZZChangeConfigPopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1EBED1CF573E5001AE4AF /* WZZChangeConfigPopVC.m */; };
+		71E46E091CEC2357006E52F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E081CEC2357006E52F2 /* AppDelegate.m */; };
+		71E46E0C1CEC2357006E52F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E0B1CEC2357006E52F2 /* main.m */; };
+		71E46E0F1CEC2357006E52F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E0E1CEC2357006E52F2 /* ViewController.m */; };
+		71E46E111CEC2357006E52F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E46E101CEC2357006E52F2 /* Assets.xcassets */; };
+		71E46E141CEC2357006E52F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E46E121CEC2357006E52F2 /* Main.storyboard */; };
+		71E46E1F1CEC2357006E52F2 /* WZZNetworkToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E1E1CEC2357006E52F2 /* WZZNetworkToolTests.m */; };
+		71E46E2A1CEC2357006E52F2 /* WZZNetworkToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E291CEC2357006E52F2 /* WZZNetworkToolUITests.m */; };
+		71E46E4D1CEC2EB5006E52F2 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E391CEC2EB5006E52F2 /* AFHTTPRequestOperation.m */; };
+		71E46E4E1CEC2EB5006E52F2 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E3B1CEC2EB5006E52F2 /* AFHTTPRequestOperationManager.m */; };
+		71E46E4F1CEC2EB5006E52F2 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E3D1CEC2EB5006E52F2 /* AFHTTPSessionManager.m */; };
+		71E46E501CEC2EB5006E52F2 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E401CEC2EB5006E52F2 /* AFNetworkReachabilityManager.m */; };
+		71E46E511CEC2EB5006E52F2 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E421CEC2EB5006E52F2 /* AFSecurityPolicy.m */; };
+		71E46E521CEC2EB5006E52F2 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E441CEC2EB5006E52F2 /* AFURLConnectionOperation.m */; };
+		71E46E531CEC2EB5006E52F2 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E461CEC2EB5006E52F2 /* AFURLRequestSerialization.m */; };
+		71E46E541CEC2EB5006E52F2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E481CEC2EB5006E52F2 /* AFURLResponseSerialization.m */; };
+		71E46E551CEC2EB5006E52F2 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E4A1CEC2EB5006E52F2 /* AFURLSessionManager.m */; };
+		71E46E561CEC2EB5006E52F2 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E46E4C1CEC2EB5006E52F2 /* HttpTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71E46E1B1CEC2357006E52F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71E46DFC1CEC2357006E52F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71E46E031CEC2357006E52F2;
+			remoteInfo = WZZNetworkTool;
+		};
+		71E46E261CEC2357006E52F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71E46DFC1CEC2357006E52F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71E46E031CEC2357006E52F2;
+			remoteInfo = WZZNetworkTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71B1EBE61CF54151001AE4AF /* WZZPropertyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZZPropertyVC.h; sourceTree = "<group>"; };
+		71B1EBE71CF54151001AE4AF /* WZZPropertyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZZPropertyVC.m; sourceTree = "<group>"; };
+		71B1EBEC1CF573E5001AE4AF /* WZZChangeConfigPopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZZChangeConfigPopVC.h; sourceTree = "<group>"; };
+		71B1EBED1CF573E5001AE4AF /* WZZChangeConfigPopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZZChangeConfigPopVC.m; sourceTree = "<group>"; };
+		71E46E041CEC2357006E52F2 /* WZZNetworkTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZZNetworkTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E46E071CEC2357006E52F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		71E46E081CEC2357006E52F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		71E46E0B1CEC2357006E52F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71E46E0D1CEC2357006E52F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		71E46E0E1CEC2357006E52F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		71E46E101CEC2357006E52F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71E46E131CEC2357006E52F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71E46E151CEC2357006E52F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E46E1A1CEC2357006E52F2 /* WZZNetworkToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZZNetworkToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E46E1E1CEC2357006E52F2 /* WZZNetworkToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZZNetworkToolTests.m; sourceTree = "<group>"; };
+		71E46E201CEC2357006E52F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E46E251CEC2357006E52F2 /* WZZNetworkToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZZNetworkToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E46E291CEC2357006E52F2 /* WZZNetworkToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZZNetworkToolUITests.m; sourceTree = "<group>"; };
+		71E46E2B1CEC2357006E52F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E46E381CEC2EB5006E52F2 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		71E46E391CEC2EB5006E52F2 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		71E46E3A1CEC2EB5006E52F2 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		71E46E3B1CEC2EB5006E52F2 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		71E46E3C1CEC2EB5006E52F2 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		71E46E3D1CEC2EB5006E52F2 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		71E46E3E1CEC2EB5006E52F2 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		71E46E3F1CEC2EB5006E52F2 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		71E46E401CEC2EB5006E52F2 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		71E46E411CEC2EB5006E52F2 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		71E46E421CEC2EB5006E52F2 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		71E46E431CEC2EB5006E52F2 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		71E46E441CEC2EB5006E52F2 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		71E46E451CEC2EB5006E52F2 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		71E46E461CEC2EB5006E52F2 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		71E46E471CEC2EB5006E52F2 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		71E46E481CEC2EB5006E52F2 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		71E46E491CEC2EB5006E52F2 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		71E46E4A1CEC2EB5006E52F2 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		71E46E4B1CEC2EB5006E52F2 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		71E46E4C1CEC2EB5006E52F2 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71E46E011CEC2357006E52F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E46E171CEC2357006E52F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E46E221CEC2357006E52F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71E46DFB1CEC2357006E52F2 = {
+			isa = PBXGroup;
+			children = (
+				71E46E061CEC2357006E52F2 /* WZZNetworkTool */,
+				71E46E1D1CEC2357006E52F2 /* WZZNetworkToolTests */,
+				71E46E281CEC2357006E52F2 /* WZZNetworkToolUITests */,
+				71E46E051CEC2357006E52F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71E46E051CEC2357006E52F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71E46E041CEC2357006E52F2 /* WZZNetworkTool.app */,
+				71E46E1A1CEC2357006E52F2 /* WZZNetworkToolTests.xctest */,
+				71E46E251CEC2357006E52F2 /* WZZNetworkToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71E46E061CEC2357006E52F2 /* WZZNetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				71E46E371CEC2EB5006E52F2 /* AFNetworking */,
+				71E46E4B1CEC2EB5006E52F2 /* HttpTool.h */,
+				71E46E4C1CEC2EB5006E52F2 /* HttpTool.m */,
+				71E46E071CEC2357006E52F2 /* AppDelegate.h */,
+				71E46E081CEC2357006E52F2 /* AppDelegate.m */,
+				71E46E0D1CEC2357006E52F2 /* ViewController.h */,
+				71E46E0E1CEC2357006E52F2 /* ViewController.m */,
+				71B1EBE61CF54151001AE4AF /* WZZPropertyVC.h */,
+				71B1EBE71CF54151001AE4AF /* WZZPropertyVC.m */,
+				71B1EBEC1CF573E5001AE4AF /* WZZChangeConfigPopVC.h */,
+				71B1EBED1CF573E5001AE4AF /* WZZChangeConfigPopVC.m */,
+				71E46E101CEC2357006E52F2 /* Assets.xcassets */,
+				71E46E121CEC2357006E52F2 /* Main.storyboard */,
+				71E46E151CEC2357006E52F2 /* Info.plist */,
+				71E46E0A1CEC2357006E52F2 /* Supporting Files */,
+			);
+			path = WZZNetworkTool;
+			sourceTree = "<group>";
+		};
+		71E46E0A1CEC2357006E52F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71E46E0B1CEC2357006E52F2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71E46E1D1CEC2357006E52F2 /* WZZNetworkToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				71E46E1E1CEC2357006E52F2 /* WZZNetworkToolTests.m */,
+				71E46E201CEC2357006E52F2 /* Info.plist */,
+			);
+			path = WZZNetworkToolTests;
+			sourceTree = "<group>";
+		};
+		71E46E281CEC2357006E52F2 /* WZZNetworkToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71E46E291CEC2357006E52F2 /* WZZNetworkToolUITests.m */,
+				71E46E2B1CEC2357006E52F2 /* Info.plist */,
+			);
+			path = WZZNetworkToolUITests;
+			sourceTree = "<group>";
+		};
+		71E46E371CEC2EB5006E52F2 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				71E46E381CEC2EB5006E52F2 /* AFHTTPRequestOperation.h */,
+				71E46E391CEC2EB5006E52F2 /* AFHTTPRequestOperation.m */,
+				71E46E3A1CEC2EB5006E52F2 /* AFHTTPRequestOperationManager.h */,
+				71E46E3B1CEC2EB5006E52F2 /* AFHTTPRequestOperationManager.m */,
+				71E46E3C1CEC2EB5006E52F2 /* AFHTTPSessionManager.h */,
+				71E46E3D1CEC2EB5006E52F2 /* AFHTTPSessionManager.m */,
+				71E46E3E1CEC2EB5006E52F2 /* AFNetworking.h */,
+				71E46E3F1CEC2EB5006E52F2 /* AFNetworkReachabilityManager.h */,
+				71E46E401CEC2EB5006E52F2 /* AFNetworkReachabilityManager.m */,
+				71E46E411CEC2EB5006E52F2 /* AFSecurityPolicy.h */,
+				71E46E421CEC2EB5006E52F2 /* AFSecurityPolicy.m */,
+				71E46E431CEC2EB5006E52F2 /* AFURLConnectionOperation.h */,
+				71E46E441CEC2EB5006E52F2 /* AFURLConnectionOperation.m */,
+				71E46E451CEC2EB5006E52F2 /* AFURLRequestSerialization.h */,
+				71E46E461CEC2EB5006E52F2 /* AFURLRequestSerialization.m */,
+				71E46E471CEC2EB5006E52F2 /* AFURLResponseSerialization.h */,
+				71E46E481CEC2EB5006E52F2 /* AFURLResponseSerialization.m */,
+				71E46E491CEC2EB5006E52F2 /* AFURLSessionManager.h */,
+				71E46E4A1CEC2EB5006E52F2 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71E46E031CEC2357006E52F2 /* WZZNetworkTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71E46E2E1CEC2357006E52F2 /* Build configuration list for PBXNativeTarget "WZZNetworkTool" */;
+			buildPhases = (
+				71E46E001CEC2357006E52F2 /* Sources */,
+				71E46E011CEC2357006E52F2 /* Frameworks */,
+				71E46E021CEC2357006E52F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WZZNetworkTool;
+			productName = WZZNetworkTool;
+			productReference = 71E46E041CEC2357006E52F2 /* WZZNetworkTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71E46E191CEC2357006E52F2 /* WZZNetworkToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71E46E311CEC2357006E52F2 /* Build configuration list for PBXNativeTarget "WZZNetworkToolTests" */;
+			buildPhases = (
+				71E46E161CEC2357006E52F2 /* Sources */,
+				71E46E171CEC2357006E52F2 /* Frameworks */,
+				71E46E181CEC2357006E52F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71E46E1C1CEC2357006E52F2 /* PBXTargetDependency */,
+			);
+			name = WZZNetworkToolTests;
+			productName = WZZNetworkToolTests;
+			productReference = 71E46E1A1CEC2357006E52F2 /* WZZNetworkToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71E46E241CEC2357006E52F2 /* WZZNetworkToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71E46E341CEC2357006E52F2 /* Build configuration list for PBXNativeTarget "WZZNetworkToolUITests" */;
+			buildPhases = (
+				71E46E211CEC2357006E52F2 /* Sources */,
+				71E46E221CEC2357006E52F2 /* Frameworks */,
+				71E46E231CEC2357006E52F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71E46E271CEC2357006E52F2 /* PBXTargetDependency */,
+			);
+			name = WZZNetworkToolUITests;
+			productName = WZZNetworkToolUITests;
+			productReference = 71E46E251CEC2357006E52F2 /* WZZNetworkToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71E46DFC1CEC2357006E52F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wzz;
+				TargetAttributes = {
+					71E46E031CEC2357006E52F2 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					71E46E191CEC2357006E52F2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 71E46E031CEC2357006E52F2;
+					};
+					71E46E241CEC2357006E52F2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 71E46E031CEC2357006E52F2;
+					};
+				};
+			};
+			buildConfigurationList = 71E46DFF1CEC2357006E52F2 /* Build configuration list for PBXProject "WZZNetworkTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71E46DFB1CEC2357006E52F2;
+			productRefGroup = 71E46E051CEC2357006E52F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71E46E031CEC2357006E52F2 /* WZZNetworkTool */,
+				71E46E191CEC2357006E52F2 /* WZZNetworkToolTests */,
+				71E46E241CEC2357006E52F2 /* WZZNetworkToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71E46E021CEC2357006E52F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E46E111CEC2357006E52F2 /* Assets.xcassets in Resources */,
+				71E46E141CEC2357006E52F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E46E181CEC2357006E52F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E46E231CEC2357006E52F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71E46E001CEC2357006E52F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B1EBEF1CF573E5001AE4AF /* WZZChangeConfigPopVC.m in Sources */,
+				71E46E4D1CEC2EB5006E52F2 /* AFHTTPRequestOperation.m in Sources */,
+				71E46E0F1CEC2357006E52F2 /* ViewController.m in Sources */,
+				71E46E4E1CEC2EB5006E52F2 /* AFHTTPRequestOperationManager.m in Sources */,
+				71E46E501CEC2EB5006E52F2 /* AFNetworkReachabilityManager.m in Sources */,
+				71E46E541CEC2EB5006E52F2 /* AFURLResponseSerialization.m in Sources */,
+				71E46E561CEC2EB5006E52F2 /* HttpTool.m in Sources */,
+				71E46E521CEC2EB5006E52F2 /* AFURLConnectionOperation.m in Sources */,
+				71E46E511CEC2EB5006E52F2 /* AFSecurityPolicy.m in Sources */,
+				71E46E4F1CEC2EB5006E52F2 /* AFHTTPSessionManager.m in Sources */,
+				71E46E531CEC2EB5006E52F2 /* AFURLRequestSerialization.m in Sources */,
+				71E46E551CEC2EB5006E52F2 /* AFURLSessionManager.m in Sources */,
+				71B1EBE91CF54151001AE4AF /* WZZPropertyVC.m in Sources */,
+				71E46E0C1CEC2357006E52F2 /* main.m in Sources */,
+				71E46E091CEC2357006E52F2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E46E161CEC2357006E52F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E46E1F1CEC2357006E52F2 /* WZZNetworkToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E46E211CEC2357006E52F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E46E2A1CEC2357006E52F2 /* WZZNetworkToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71E46E1C1CEC2357006E52F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71E46E031CEC2357006E52F2 /* WZZNetworkTool */;
+			targetProxy = 71E46E1B1CEC2357006E52F2 /* PBXContainerItemProxy */;
+		};
+		71E46E271CEC2357006E52F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71E46E031CEC2357006E52F2 /* WZZNetworkTool */;
+			targetProxy = 71E46E261CEC2357006E52F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71E46E121CEC2357006E52F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71E46E131CEC2357006E52F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71E46E2C1CEC2357006E52F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		71E46E2D1CEC2357006E52F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		71E46E2F1CEC2357006E52F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WZZNetworkTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZNetworkTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71E46E301CEC2357006E52F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WZZNetworkTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZNetworkTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71E46E321CEC2357006E52F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WZZNetworkToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZNetworkToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZZNetworkTool.app/Contents/MacOS/WZZNetworkTool";
+			};
+			name = Debug;
+		};
+		71E46E331CEC2357006E52F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WZZNetworkToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZNetworkToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZZNetworkTool.app/Contents/MacOS/WZZNetworkTool";
+			};
+			name = Release;
+		};
+		71E46E351CEC2357006E52F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WZZNetworkToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZNetworkToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WZZNetworkTool;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		71E46E361CEC2357006E52F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WZZNetworkToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZNetworkToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WZZNetworkTool;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71E46DFF1CEC2357006E52F2 /* Build configuration list for PBXProject "WZZNetworkTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E46E2C1CEC2357006E52F2 /* Debug */,
+				71E46E2D1CEC2357006E52F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71E46E2E1CEC2357006E52F2 /* Build configuration list for PBXNativeTarget "WZZNetworkTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E46E2F1CEC2357006E52F2 /* Debug */,
+				71E46E301CEC2357006E52F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71E46E311CEC2357006E52F2 /* Build configuration list for PBXNativeTarget "WZZNetworkToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E46E321CEC2357006E52F2 /* Debug */,
+				71E46E331CEC2357006E52F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71E46E341CEC2357006E52F2 /* Build configuration list for PBXNativeTarget "WZZNetworkToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E46E351CEC2357006E52F2 /* Debug */,
+				71E46E361CEC2357006E52F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71E46DFC1CEC2357006E52F2 /* Project object */;
+}

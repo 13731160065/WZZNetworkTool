@@ -12,4 +12,8 @@
 
 @property (assign, nonatomic) BOOL isInput;
 
+@property (copy, nonatomic) NSString * outputReqStr;
+
+- (void)blockWithInput:(void(^)(NSString * reqStr))inputBlock;
+
 @end

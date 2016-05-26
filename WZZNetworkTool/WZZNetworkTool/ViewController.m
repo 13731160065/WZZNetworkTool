@@ -85,11 +85,6 @@
     keysArr = @[_key1, _key2, _key3, _key4, _key5, _key6, _key7, _key8, _key9, _key10, _key11, _key12, _key13, _key14, _key15, _key16, _key17, _key18, _key19, _key20];
     
     valuesArr = @[_value1, _value2, _value3, _value4, _value5, _value6, _value7, _value8, _value9, _value10, _value11, _value12, _value13, _value14, _value15, _value16, _value17, _value18, _value19, _value20];
-    
-    
-    NSArray *arrayOfDocPath =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
-    NSString *docPath = [arrayOfDocPath objectAtIndex:0];
-    NSLog(@"%@", docPath);
 }
 - (IBAction)resetValues:(id)sender {
     [keysArr enumerateObjectsUsingBlock:^(NSTextField * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -97,6 +92,7 @@
         valuesArr[idx].stringValue = @"";
         [_netStateMenu selectItemAtIndex:0];
     }];
+    
 }
 
 - (IBAction)requestClick:(id)sender {
@@ -157,6 +153,21 @@
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
+//json字符串转字典
+- (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
+    if(err) {
+        NSLog(@"json解析失败：%@",err);
+        return nil;
+    }
+    return dic;
+}
+
 #pragma mark - 代理方法
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
     return 10;
@@ -169,12 +180,34 @@
 }
 
 - (void)prepareForSegue:(NSStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"input"]) {
+    if ([segue.identifier isEqualToString:@"input"]) {//导入
         WZZChangeConfigPopVC * vcc = (WZZChangeConfigPopVC *)segue.destinationController;
         vcc.isInput = YES;
-    } else if ([segue.identifier isEqualToString:@"output"]) {
+        [vcc blockWithInput:^(NSString *reqStr) {
+            NSArray * arr = [reqStr componentsSeparatedByString:@"@"];
+            NSString * urlStr = arr[0];
+            NSString * uploadStr = arr[1];
+            NSDictionary * dic = [self dictionaryWithJsonString:uploadStr];
+            _requestUrlTextField.stringValue = urlStr;
+            [[dic allKeys] enumerateObjectsUsingBlock:^(NSString * _Nonnull aKey, NSUInteger idx, BOOL * _Nonnull stop) {
+                NSString * aObj = dic[aKey];
+                if (idx >= 20) {
+                    return ;
+                }
+                keysArr[idx].stringValue = aKey;
+                valuesArr[idx].stringValue = aObj;
+            }];
+        }];
+    } else if ([segue.identifier isEqualToString:@"output"]) {//导出
+        NSMutableDictionary * uploadDic = [NSMutableDictionary dictionary];
+        [keysArr enumerateObjectsUsingBlock:^(NSTextField * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (![keysArr[idx].stringValue isEqualToString:@""] && ![valuesArr[idx].stringValue isEqualToString:@""]) {
+                [uploadDic setObject:valuesArr[idx].stringValue forKey:keysArr[idx].stringValue];
+            }
+        }];
         WZZChangeConfigPopVC * vcc = (WZZChangeConfigPopVC *)segue.destinationController;
         vcc.isInput = NO;
+        vcc.outputReqStr = [[_requestUrlTextField.stringValue stringByAppendingString:@"@"] stringByAppendingString:[self arrayToJson:uploadDic]];
     }
 }
 

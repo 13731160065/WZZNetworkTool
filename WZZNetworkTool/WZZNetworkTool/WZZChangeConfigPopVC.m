@@ -77,22 +77,35 @@
             fullPath = [headerPath stringByAppendingString:[@"/" stringByAppendingString:_pathBody.stringValue]];
         }
     }
+    
     NSFileManager * fileManager = [NSFileManager defaultManager];
     if (_isInput) {
         //导入
-        if ([fileManager fileExistsAtPath:fullPath]) {
-            NSString * loadStr = [[NSString alloc] initWithData:[NSData dataWithContentsOfFile:fullPath] encoding:NSUTF8StringEncoding];
-            if ([loadStr isEqualToString:@""]) {
-                _errorTextView.string = @"文件中没有东西";
+        
+        NSOpenPanel* openPanel = [NSOpenPanel openPanel];
+        //            [openPanel setAllowedFileTypes:@[@"zz"]];
+        [openPanel setMessage:@"选择文件"];
+        [openPanel setPrompt:@"选择"];
+        NSInteger result =[openPanel runModal];
+        
+        if (result == NSFileHandlingPanelOKButton) {
+            
+            if ([fileManager fileExistsAtPath:fullPath]) {
+                NSString * loadStr = [[NSString alloc] initWithData:[NSData dataWithContentsOfURL:openPanel.URL] encoding:NSUTF8StringEncoding];
+                if ([loadStr isEqualToString:@""]) {
+                    _errorTextView.string = @"文件中没有东西";
+                } else {
+                    _errorTextView.string = @"导入成功";
+                }
+                if (_inputBlock) {
+                    _inputBlock(loadStr);
+                }
             } else {
-                _errorTextView.string = @"导入成功";
+                _errorTextView.string = @"文件不存在";
             }
-            if (_inputBlock) {
-                _inputBlock(loadStr);
-            }
-        } else {
-            _errorTextView.string = @"文件不存在";
+            
         }
+        
     } else {
         //导出
         if ([fileManager fileExistsAtPath:fullPath]) {

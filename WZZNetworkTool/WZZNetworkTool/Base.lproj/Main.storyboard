@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -670,7 +670,7 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="m2S-Jp-Qdl">
+                    <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="876" height="622"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -686,7 +686,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yj-aO-Lgk">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4yj-aO-Lgk">
                                 <rect key="frame" x="778" y="576" width="84" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="EP0-rM-kRK"/>
@@ -700,7 +700,7 @@
                                     <action selector="requestClick:" target="XfG-lQ-9wD" id="EfX-47-E4n"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V9h-MK-agU">
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V9h-MK-agU">
                                 <rect key="frame" x="84" y="583" width="690" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="IZR-OR-KJL"/>
@@ -729,10 +729,10 @@
                                     </menu>
                                 </popUpButtonCell>
                             </popUpButton>
-                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjn-od-tHZ">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Sjn-od-tHZ">
                                 <rect key="frame" x="20" y="20" width="836" height="526"/>
                                 <subviews>
-                                    <scrollView misplaced="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5V-2O-Mkt">
+                                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5V-2O-Mkt">
                                         <rect key="frame" x="0.0" y="0.0" width="836" height="263"/>
                                         <clipView key="contentView" id="HeM-aB-QbU">
                                             <rect key="frame" x="1" y="1" width="834" height="261"/>
@@ -760,13 +760,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
-                                    <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7FZ-50-MUa">
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="7FZ-50-MUa">
                                         <rect key="frame" x="0.0" y="263" width="836" height="263"/>
                                         <subviews>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuV-me-6Ag">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="uuV-me-6Ag">
                                                 <rect key="frame" x="215" y="212" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-f2-pnn">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-f2-pnn">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="Ccp-XM-wvg">
                                                             <font key="font" metaFont="system"/>
@@ -774,7 +774,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-4y-ugf">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-4y-ugf">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="CAg-k4-gy7">
                                                             <font key="font" metaFont="system"/>
@@ -796,7 +796,7 @@
                                                     <constraint firstItem="3ES-f2-pnn" firstAttribute="leading" secondItem="uuV-me-6Ag" secondAttribute="leading" constant="8" id="oov-U2-ynB"/>
                                                 </constraints>
                                             </customView>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfn-lH-2Aj">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="yfn-lH-2Aj">
                                                 <rect key="frame" x="422" y="212" width="199" height="43"/>
                                                 <subviews>
                                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IgJ-hu-cx8">
@@ -829,10 +829,10 @@
                                                     <constraint firstAttribute="bottom" secondItem="IgJ-hu-cx8" secondAttribute="bottom" constant="8" id="iwA-1D-pv1"/>
                                                 </constraints>
                                             </customView>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOV-Ak-XVD">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="JOV-Ak-XVD">
                                                 <rect key="frame" x="629" y="212" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5cH-gZ-PDJ">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5cH-gZ-PDJ">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="rce-8a-RKC">
                                                             <font key="font" metaFont="system"/>
@@ -840,7 +840,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="48V-s6-BTP">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="48V-s6-BTP">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="pX6-fC-SRP">
                                                             <font key="font" metaFont="system"/>
@@ -865,7 +865,7 @@
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="M04-UF-NRc">
                                                 <rect key="frame" x="8" y="161" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-em-AIa">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-em-AIa">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="X3i-2g-7H9">
                                                             <font key="font" metaFont="system"/>
@@ -873,7 +873,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qvy-Yn-zdd">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qvy-Yn-zdd">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="aIP-Ml-ve7">
                                                             <font key="font" metaFont="system"/>
@@ -928,7 +928,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="FQE-Oj-8gR" secondAttribute="trailing" constant="8" id="rmY-r5-wTO"/>
                                                 </constraints>
                                             </customView>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KD6-pt-MLv">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="KD6-pt-MLv">
                                                 <rect key="frame" x="422" y="161" width="199" height="43"/>
                                                 <subviews>
                                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dmm-qu-Fkm">
@@ -939,7 +939,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IM5-nC-vQ9">
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IM5-nC-vQ9">
                                                         <rect key="frame" x="104" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="Uiq-fy-ANg">
                                                             <font key="font" metaFont="system"/>
@@ -961,10 +961,10 @@
                                                     <constraint firstAttribute="bottom" secondItem="IM5-nC-vQ9" secondAttribute="bottom" constant="8" id="swm-Zd-Xtl"/>
                                                 </constraints>
                                             </customView>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tqu-Su-Xq9">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Tqu-Su-Xq9">
                                                 <rect key="frame" x="629" y="161" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PYY-BL-cRk">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYY-BL-cRk">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="l1v-Ko-drA">
                                                             <font key="font" metaFont="system"/>
@@ -972,7 +972,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0aV-Md-ow4">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0aV-Md-ow4">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="1ZF-gP-rGH">
                                                             <font key="font" metaFont="system"/>
@@ -997,7 +997,7 @@
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Dxe-va-HAp">
                                                 <rect key="frame" x="8" y="110" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yAe-Zn-Nal">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAe-Zn-Nal">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="HXO-TS-WlN">
                                                             <font key="font" metaFont="system"/>
@@ -1005,7 +1005,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7vP-N3-UAZ">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7vP-N3-UAZ">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="9pE-zr-XsU">
                                                             <font key="font" metaFont="system"/>
@@ -1030,7 +1030,7 @@
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="ga9-bN-Jgz">
                                                 <rect key="frame" x="215" y="110" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cV-5r-OTP">
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3cV-5r-OTP">
                                                         <rect key="frame" x="8" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="qJF-58-11b">
                                                             <font key="font" metaFont="system"/>
@@ -1038,7 +1038,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-Ko-hza">
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-Ko-hza">
                                                         <rect key="frame" x="104" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="jFJ-tk-5IP">
                                                             <font key="font" metaFont="system"/>
@@ -1063,7 +1063,7 @@
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="fsj-0B-twu">
                                                 <rect key="frame" x="422" y="110" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gQ5-hP-qhr">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gQ5-hP-qhr">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="LVQ-fv-fAc">
                                                             <font key="font" metaFont="system"/>
@@ -1071,7 +1071,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TYO-zJ-vd9">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TYO-zJ-vd9">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="CeU-FW-owj">
                                                             <font key="font" metaFont="system"/>
@@ -1093,10 +1093,10 @@
                                                     <constraint firstAttribute="bottom" secondItem="TYO-zJ-vd9" secondAttribute="bottom" constant="8" id="suD-pL-NYa"/>
                                                 </constraints>
                                             </customView>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXH-Yv-FNs">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="pXH-Yv-FNs">
                                                 <rect key="frame" x="629" y="110" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u3U-Yr-qoR">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u3U-Yr-qoR">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="VjS-T0-FbK">
                                                             <font key="font" metaFont="system"/>
@@ -1104,7 +1104,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cut-AE-EZN">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cut-AE-EZN">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="c14-8e-kb6">
                                                             <font key="font" metaFont="system"/>
@@ -1162,7 +1162,7 @@
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="8iX-DG-vEr">
                                                 <rect key="frame" x="215" y="59" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gTC-GI-Sd7">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTC-GI-Sd7">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="RyQ-9k-HDp">
                                                             <font key="font" metaFont="system"/>
@@ -1170,7 +1170,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B6o-Hf-FDv">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6o-Hf-FDv">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="bTA-w0-gPY">
                                                             <font key="font" metaFont="system"/>
@@ -1192,7 +1192,7 @@
                                                     <constraint firstAttribute="width" constant="199" id="yO6-Tt-FYd"/>
                                                 </constraints>
                                             </customView>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vr9-E9-JHN">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Vr9-E9-JHN">
                                                 <rect key="frame" x="422" y="59" width="199" height="43"/>
                                                 <subviews>
                                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7gX-K5-368">
@@ -1203,7 +1203,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ad-cM-hIs">
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Ad-cM-hIs">
                                                         <rect key="frame" x="104" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="4WT-Z8-pP1">
                                                             <font key="font" metaFont="system"/>
@@ -1225,10 +1225,10 @@
                                                     <constraint firstItem="2Ad-cM-hIs" firstAttribute="width" secondItem="7gX-K5-368" secondAttribute="width" id="vZv-oc-SFj"/>
                                                 </constraints>
                                             </customView>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nse-2m-etA">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Nse-2m-etA">
                                                 <rect key="frame" x="629" y="59" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JDg-OR-1Ea">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDg-OR-1Ea">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="SFd-31-myA">
                                                             <font key="font" metaFont="system"/>
@@ -1236,7 +1236,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-aZ-XEk">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-aZ-XEk">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="gVd-BY-WdO">
                                                             <font key="font" metaFont="system"/>
@@ -1261,7 +1261,7 @@
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="tID-9h-SkQ">
                                                 <rect key="frame" x="8" y="8" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gye-HI-RHu">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gye-HI-RHu">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="Eht-3x-2JF">
                                                             <font key="font" metaFont="system"/>
@@ -1269,7 +1269,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bxO-qv-Txm">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxO-qv-Txm">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="UaK-x7-WqJ">
                                                             <font key="font" metaFont="system"/>
@@ -1357,10 +1357,10 @@
                                                     <constraint firstAttribute="bottom" secondItem="QVB-Bz-MJb" secondAttribute="bottom" constant="8" id="xdW-NY-9sX"/>
                                                 </constraints>
                                             </customView>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g0g-2X-e4a">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="g0g-2X-e4a">
                                                 <rect key="frame" x="629" y="8" width="199" height="43"/>
                                                 <subviews>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tX1-sB-pxA">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tX1-sB-pxA">
                                                         <rect key="frame" x="8" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="键" drawsBackground="YES" id="hEk-Te-1Z8">
                                                             <font key="font" metaFont="system"/>
@@ -1368,7 +1368,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S9i-zf-xY8">
+                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S9i-zf-xY8">
                                                         <rect key="frame" x="103" y="8" width="88" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="cJP-fh-5xa">
                                                             <font key="font" metaFont="system"/>
@@ -1390,7 +1390,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="tX1-sB-pxA" secondAttribute="bottom" constant="8" id="v69-Du-EJZ"/>
                                                 </constraints>
                                             </customView>
-                                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9L1-oq-d29">
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="9L1-oq-d29">
                                                 <rect key="frame" x="8" y="212" width="199" height="43"/>
                                                 <subviews>
                                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PnC-Ne-jrg">
@@ -1401,7 +1401,7 @@
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jm9-4E-cUF">
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jm9-4E-cUF">
                                                         <rect key="frame" x="104" y="8" width="87" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="值" drawsBackground="YES" id="nUO-Z6-ns9">
                                                             <font key="font" metaFont="system"/>
@@ -1524,7 +1524,7 @@
                                     <constraint firstItem="z5V-2O-Mkt" firstAttribute="height" secondItem="7FZ-50-MUa" secondAttribute="height" id="lW4-Jb-vtf"/>
                                 </constraints>
                             </customView>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cka-ee-Wx4">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cka-ee-Wx4">
                                 <rect key="frame" x="778" y="547" width="84" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="72" id="DA5-px-ian"/>
@@ -1563,7 +1563,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="pBK-Me-CBo" kind="popover" identifier="input" popoverAnchorView="4da-nZ-wzP" popoverBehavior="t" preferredEdge="maxY" id="Zc0-10-2ES"/>
+                                    <action selector="inputClick:" target="XfG-lQ-9wD" id="b8W-2c-JJG"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FzJ-oG-3R6">
@@ -1577,13 +1577,29 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="pBK-Me-CBo" kind="popover" identifier="output" popoverAnchorView="FzJ-oG-3R6" popoverBehavior="t" preferredEdge="maxY" id="Aq8-PH-iBW"/>
+                                    <action selector="outputClick:" target="XfG-lQ-9wD" id="t4x-39-btA"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rba-xA-DDB">
+                                <rect key="frame" x="336" y="547" width="82" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NEd-tF-dNU"/>
+                                    <constraint firstAttribute="width" constant="70" id="xlV-uL-XEw"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="测试网络" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Kdq-Wc-GIQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="testNet:" target="XfG-lQ-9wD" id="PBI-hI-sV5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="V9h-MK-agU" firstAttribute="centerY" secondItem="L7m-2w-ttP" secondAttribute="centerY" id="2BL-rw-Pfb"/>
                             <constraint firstAttribute="bottom" secondItem="Sjn-od-tHZ" secondAttribute="bottom" constant="20" id="2Lp-cF-9jV"/>
+                            <constraint firstItem="rba-xA-DDB" firstAttribute="leading" secondItem="4da-nZ-wzP" secondAttribute="trailing" constant="12" id="2pE-gm-rkA"/>
+                            <constraint firstItem="rba-xA-DDB" firstAttribute="centerY" secondItem="4da-nZ-wzP" secondAttribute="centerY" id="8RC-Od-cRf"/>
                             <constraint firstAttribute="trailing" secondItem="4yj-aO-Lgk" secondAttribute="trailing" constant="20" id="BO7-Kq-6te"/>
                             <constraint firstItem="Sjn-od-tHZ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="CqT-N1-c4A"/>
                             <constraint firstItem="L7m-2w-ttP" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="IsS-2i-ecR"/>
@@ -1629,6 +1645,7 @@
                         <outlet property="netStateMenu" destination="fvo-XF-TGX" id="EdR-7y-lQ2"/>
                         <outlet property="requestUrlTextField" destination="V9h-MK-agU" id="uE8-Ck-75Q"/>
                         <outlet property="responceTextView" destination="z5V-2O-Mkt" id="uzi-34-Nnj"/>
+                        <outlet property="testButton" destination="rba-xA-DDB" id="H0P-nz-gNw"/>
                         <outlet property="value1" destination="Jm9-4E-cUF" id="isG-Aw-pqx"/>
                         <outlet property="value10" destination="bAM-Ko-hza" id="WER-YO-MDw"/>
                         <outlet property="value11" destination="TYO-zJ-vd9" id="yxr-B1-QPQ"/>
@@ -1941,7 +1958,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Zc0-10-2ES"/>
         <segue reference="cq2-FE-JQM"/>
     </inferredMetricsTieBreakers>
 </document>

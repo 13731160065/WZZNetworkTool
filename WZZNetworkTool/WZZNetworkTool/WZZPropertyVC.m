@@ -41,6 +41,8 @@
                 resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSNumber * %@;\n", keysArr[idx]];
             } else if ([[obj class] isSubclassOfClass:[NSArray class]]) {
                 resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSArray * %@;\n", keysArr[idx]];
+            } else if ([[obj class] isSubclassOfClass:[NSDictionary class]]){
+                resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSDictionary * %@;\n", keysArr[idx]];
             } else {
                 NSLog(@"转换失败->%ld", idx);
             }
@@ -63,11 +65,23 @@
         * resultStr = @"";
         [valuesArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([[obj class] isSubclassOfClass:[NSString class]]) {
-                resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSString * %@;\n", keysArr[idx]];
-            } else if ([[obj class] isSubclassOfClass:[NSNumber class]]) {
-                resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSNumber * %@;\n", keysArr[idx]];
+                BOOL isString = NO;
+                for (int i = 0; i < ((NSString *)obj).length; i++) {
+                    char objChar = [obj characterAtIndex:i];
+                    if (objChar < '0' || objChar > '9') {
+                        //字符，字符串类型
+                        isString = YES;
+                    }
+                }
+                if (isString) {
+                    resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSString * %@;\n", keysArr[idx]];
+                } else {
+                    resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSNumber * %@;\n", keysArr[idx]];
+                }
             } else if ([[obj class] isSubclassOfClass:[NSArray class]]) {
                 resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSArray * %@;\n", keysArr[idx]];
+            } else if ([[obj class] isSubclassOfClass:[NSDictionary class]]){
+                resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSDictionary * %@;\n", keysArr[idx]];
             } else {
                 NSLog(@"转换失败->%ld", idx);
             }
@@ -92,6 +106,10 @@
     dicStr = [[dicStr componentsSeparatedByString:@":"] componentsJoinedByString:@"\":\""];
     dicStr = [[dicStr componentsSeparatedByString:@","] componentsJoinedByString:@"\",\""];
     dicStr = [[dicStr componentsSeparatedByString:@"}"] componentsJoinedByString:@"\"}"];
+    NSLog(@"6.%@", dicStr);
+    dicStr = [[dicStr componentsSeparatedByString:@"\"\""] componentsJoinedByString:@"\""];
+    dicStr = [[dicStr componentsSeparatedByString:@"\"{"] componentsJoinedByString:@"{"];
+    dicStr = [[dicStr componentsSeparatedByString:@"}\""] componentsJoinedByString:@"}"];
     NSLog(@"ok:%@", dicStr);
     return dicStr;
 }

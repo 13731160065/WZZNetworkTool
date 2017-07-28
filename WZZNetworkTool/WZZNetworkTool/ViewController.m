@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HttpTool.h"
+#import "WZZHttpTool.h"
 #import "WZZChangeConfigPopVC.h"
 
 @interface ViewController ()<NSTableViewDataSource, NSTableViewDelegate>
@@ -23,6 +23,7 @@
 }
 #pragma mark - 输入框
 @property (weak) IBOutlet NSButton *testButton;
+@property (weak) IBOutlet NSButton *requestBodyButton;
 
 @property (weak) IBOutlet NSTextField *key1;
 @property (weak) IBOutlet NSTextField *key2;
@@ -88,6 +89,8 @@
     [_netStateMenu addItemWithTitle:@"put"];
     [_netStateMenu addItemWithTitle:@"delete"];
     
+    NSLog(@"%@", @{@"a":@"v", @"b":@"v_2", @"c":@(234), @"d":@{@"a":@"c"}, @"e":@{@"fff":@"00", @"aaa":@{@"ffe":@"ffea_0"}}});
+    
     keysArr = @[_key1, _key2, _key3, _key4, _key5, _key6, _key7, _key8, _key9, _key10, _key11, _key12, _key13, _key14, _key15, _key16, _key17, _key18, _key19, _key20];
     
     valuesArr = @[_value1, _value2, _value3, _value4, _value5, _value6, _value7, _value8, _value9, _value10, _value11, _value12, _value13, _value14, _value15, _value16, _value17, _value18, _value19, _value20];
@@ -101,6 +104,16 @@
     
 }
 
+- (IBAction)changeBodyDic:(id)sender {
+    if ([_requestBodyButton.title isEqualToString:@"请求体plan"]) {
+        _requestBodyButton.title = @"请求体json";
+        [WZZHttpTool shareInstance].bodyType = WZZHttpToolBodyType_jsonData;
+    } else {
+        _requestBodyButton.title = @"请求体plan";
+        [WZZHttpTool shareInstance].bodyType = WZZHttpToolBodyType_textPlain;
+    }
+}
+
 - (IBAction)requestClick:(id)sender {
     NSTextView * tvv = _responceTextView.documentView;
     NSMutableDictionary * uploadDic = [NSMutableDictionary dictionary];
@@ -110,40 +123,32 @@
         }
     }];
     if ([_netStateMenu.selectedItem.title isEqualToString:@"get"]) {
-        [HttpTool GET:_requestUrlTextField.stringValue parameters:uploadDic success:^(id responseObject) {
-            NSLog(@"ok->%@", responseObject);
-            NSString * jsonStr = [self arrayToJson:responseObject];
+        [WZZHttpTool GET:_requestUrlTextField.stringValue successBlock:^(id httpResponse) {
+            NSString * jsonStr = [self arrayToJson:httpResponse];
             tvv.string = jsonStr;
-        } failure:^(NSError *error) {
-            NSLog(@"no");
-            tvv.string = [NSString stringWithFormat:@"网络请求失败，错误信息如下：\n%@", error];
+        } failedBlock:^(NSError *httpError) {
+            tvv.string = [NSString stringWithFormat:@"网络请求失败，错误信息如下：\n%@", httpError];
         }];
     } else if ([_netStateMenu.selectedItem.title isEqualToString:@"post"]) {
-        [HttpTool POST:_requestUrlTextField.stringValue parameters:uploadDic success:^(id responseObject) {
-            NSLog(@"ok->%@", responseObject);
-            NSString * jsonStr = [self arrayToJson:responseObject];
+        [WZZHttpTool POST:_requestUrlTextField.stringValue httpBody:uploadDic successBlock:^(id httpResponse) {
+            NSString * jsonStr = [self arrayToJson:httpResponse];
             tvv.string = jsonStr;
-        } failure:^(NSError *error) {
-            NSLog(@"no");
-            tvv.string = [NSString stringWithFormat:@"网络请求失败，错误信息如下：\n%@", error];
+        } failedBlock:^(NSError *httpError) {
+            tvv.string = [NSString stringWithFormat:@"网络请求失败，错误信息如下：\n%@", httpError];
         }];
     } else if ([_netStateMenu.selectedItem.title isEqualToString:@"put"]) {
-        [HttpTool PUT:_requestUrlTextField.stringValue parameters:uploadDic success:^(id responseObject) {
-            NSLog(@"ok->%@", responseObject);
-            NSString * jsonStr = [self arrayToJson:responseObject];
+        [WZZHttpTool PUT:_requestUrlTextField.stringValue httpBody:uploadDic successBlock:^(id httpResponse) {
+            NSString * jsonStr = [self arrayToJson:httpResponse];
             tvv.string = jsonStr;
-        } failure:^(NSError *error) {
-            NSLog(@"no");
-            tvv.string = [NSString stringWithFormat:@"网络请求失败，错误信息如下：\n%@", error];
+        } failedBlock:^(NSError *httpError) {
+            tvv.string = [NSString stringWithFormat:@"网络请求失败，错误信息如下：\n%@", httpError];
         }];
     } else if ([_netStateMenu.selectedItem.title isEqualToString:@"delete"]) {
-        [HttpTool DELETE:_requestUrlTextField.stringValue parameters:uploadDic success:^(id responseObject) {
-            NSLog(@"ok->%@", responseObject);
-            NSString * jsonStr = [self arrayToJson:responseObject];
+        [WZZHttpTool DELETE:_requestUrlTextField.stringValue httpBody:uploadDic successBlock:^(id httpResponse) {
+            NSString * jsonStr = [self arrayToJson:httpResponse];
             tvv.string = jsonStr;
-        } failure:^(NSError *error) {
-            NSLog(@"no");
-            tvv.string = [NSString stringWithFormat:@"网络请求失败，错误信息如下：\n%@", error];
+        } failedBlock:^(NSError *httpError) {
+            tvv.string = [NSString stringWithFormat:@"网络请求失败，错误信息如下：\n%@", httpError];
         }];
     }
     
@@ -293,31 +298,27 @@
         }
     }];
     if ([_netStateMenu.selectedItem.title isEqualToString:@"get"]) {
-        [HttpTool GET:_requestUrlTextField.stringValue parameters:uploadDic success:^(id responseObject) {
-            NSLog(@"ok->%@", responseObject);
+        [WZZHttpTool GET:_requestUrlTextField.stringValue successBlock:^(id httpResponse) {
             [self showAlert];
-        } failure:^(NSError *error) {
+        } failedBlock:^(NSError *httpError) {
             
         }];
     } else if ([_netStateMenu.selectedItem.title isEqualToString:@"post"]) {
-        [HttpTool POST:_requestUrlTextField.stringValue parameters:uploadDic success:^(id responseObject) {
-            NSLog(@"ok->%@", responseObject);
+        [WZZHttpTool POST:_requestUrlTextField.stringValue httpBody:uploadDic successBlock:^(id httpResponse) {
             [self showAlert];
-        } failure:^(NSError *error) {
+        } failedBlock:^(NSError *httpError) {
             
         }];
     } else if ([_netStateMenu.selectedItem.title isEqualToString:@"put"]) {
-        [HttpTool PUT:_requestUrlTextField.stringValue parameters:uploadDic success:^(id responseObject) {
-            NSLog(@"ok->%@", responseObject);
+        [WZZHttpTool PUT:_requestUrlTextField.stringValue httpBody:uploadDic successBlock:^(id httpResponse) {
             [self showAlert];
-        } failure:^(NSError *error) {
+        } failedBlock:^(NSError *httpError) {
             
         }];
     } else if ([_netStateMenu.selectedItem.title isEqualToString:@"delete"]) {
-        [HttpTool DELETE:_requestUrlTextField.stringValue parameters:uploadDic success:^(id responseObject) {
-            NSLog(@"ok->%@", responseObject);
+        [WZZHttpTool DELETE:_requestUrlTextField.stringValue httpBody:uploadDic successBlock:^(id httpResponse) {
             [self showAlert];
-        } failure:^(NSError *error) {
+        } failedBlock:^(NSError *httpError) {
             
         }];
     }

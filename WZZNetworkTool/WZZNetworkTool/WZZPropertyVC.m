@@ -36,7 +36,7 @@
         * resultStr = @"";
         [valuesArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([[obj class] isSubclassOfClass:[NSString class]]) {
-                resultStr = [resultStr stringByAppendingFormat:@"@property (copy, nonatomic) NSString * %@;\n", keysArr[idx]];
+                resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSString * %@;\n", keysArr[idx]];
             } else if ([[obj class] isSubclassOfClass:[NSNumber class]]) {
                 resultStr = [resultStr stringByAppendingFormat:@"@property (strong, nonatomic) NSNumber * %@;\n", keysArr[idx]];
             } else if ([[obj class] isSubclassOfClass:[NSArray class]]) {
